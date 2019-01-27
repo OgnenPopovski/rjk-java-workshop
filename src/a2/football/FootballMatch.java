@@ -39,12 +39,12 @@ public class FootballMatch {
 
   public void printMatchScorrers() {
     if (homeTeamScorers.size() > 0) {
-      String scorrers = getScorersInString(homeTeamScorers);
-      System.out.println("Home Scorers: " + scorrers);
+      String scorers = getScorersInString(homeTeamScorers);
+      System.out.println("Home Scorers: " + scorers);
     }
     if (awayTeamScorers.size() > 0) {
-      String scorrers = getScorersInString(awayTeamScorers);
-      System.out.println("Away Scorers: " + scorrers);
+      String scorers = getScorersInString(awayTeamScorers);
+      System.out.println("Away Scorers: " + scorers);
     }
   }
 
