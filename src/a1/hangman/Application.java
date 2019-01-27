@@ -19,7 +19,7 @@ public class Application {
 
         Hangman game = new Hangman(word, numberOfTriesAllowed);
         while(!game.isGameOver()) {
-            System.out.println("----------------------------------------------");
+            System.out.println("-------------------------------------------------");
             game.printGameProgress();
             System.out.println("enter letter: ");
             String input = in.next();
