@@ -43,32 +43,32 @@ public class Everything {
         // proverka dali listata e prazna. vrakja true ako da
         boolean isEmpty = listWithStrings.isEmpty();
 
-//
-//        String text = "abcd,efgh,ij,k,l,  ";
-//        char[] chars = text.toCharArray();
-//        String upperCaseText = text.toUpperCase();
-//        String lowerCaseText = text.toLowerCase();
-//        String[] split = text.split(",");
-//
-//
-//        String[] stringArray = {"abc","def","ghij","kl"};
-//        List<String> stringsAsList = Arrays.asList(stringArray);
-//
-//        Integer[] intArray = {1, 2, 3, 4, 5};
-//        List<Integer> intsAsList = Arrays.asList(intArray);
-//
-//        char a = 'a';
-//        char aUpperCase = Character.toUpperCase(a);
-//        char aLowerCase = Character.toLowerCase(a);
-//
-////        char[] chars = {'a', 'b', 'c', 'd', 'e'};
-////        String word = new String(chars);
-//        String word = "  abcd ef g     ";
-//        String trimmedWord = word.trim();
-//        // trimmedWord: "abcd ef g";
-////        System.out.println(retryUntilReadInteger());
-////        System.out.println(retryUntilReadDouble());
-////        System.out.println(retryUntilReadBoolean());
+
+        String text = "abcd,efgh,ij,k,l,  ";
+        char[] textToChars = text.toCharArray();
+        String upperCaseText = text.toUpperCase();
+        String lowerCaseText = text.toLowerCase();
+        String[] split = text.split(",");
+
+
+        String[] stringArray = {"abc","def","ghij","kl"};
+        List<String> stringsAsList = Arrays.asList(stringArray);
+
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        List<Integer> intsAsList = Arrays.asList(intArray);
+
+        char a = 'a';
+        char aUpperCase = Character.toUpperCase(a);
+        char aLowerCase = Character.toLowerCase(a);
+
+        char[] chars = {'a', 'b', 'c', 'd', 'e'};
+        String wordFromChars = new String(chars);
+        String word = "  abcd ef g     ";
+        String trimmedWord = word.trim();
+        System.out.println("trimmed word: " + trimmedWord);
+        System.out.println(retryUntilReadInteger());
+        System.out.println(retryUntilReadDouble());
+        System.out.println(retryUntilReadBoolean());
     }
 
     public static boolean retryUntilReadBoolean() {
