@@ -12,7 +12,7 @@ public class Hangman {
     private int lettersScored = 0;
 
     public Hangman(String wordToPlay, int numberOfTriesAllowed) {
-        word = wordToPlay.toCharArray();
+        word = wordToPlay.trim().toCharArray();
         tries = numberOfTriesAllowed;
         currentProgress = new char[word.length];
         for (int i = 0; i < currentProgress.length; i++) {
@@ -59,7 +59,7 @@ public class Hangman {
     }
 
     public String score() {
-        String score = "";
+        String score;
         if (lettersScored == word.length) {
             score = "You WON!";
         } else {
