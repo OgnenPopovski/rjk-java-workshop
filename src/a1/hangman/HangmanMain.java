@@ -1,4 +1,4 @@
-package a1.hangman.atclass;
+package a1.hangman;
 
 import java.util.Scanner;
 
@@ -6,10 +6,10 @@ public class HangmanMain {
 
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
-    System.out.println("vnesi zbor");
+    System.out.println("Enter the word to play (can be sentence with blank spaces)");
     String word = retryUntilNoEmptyWord();
 
-    System.out.println("vnesi obidi");
+    System.out.println("Enter how many tries are allowed before hanging the player:");
     int tries = retryUntilReadPositiveInteger();
 
     for (int i = 0; i < 50; i++) {

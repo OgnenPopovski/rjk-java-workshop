@@ -7,12 +7,13 @@ public class PhonebookMain {
   public static void main(String[] args) {
 
     Phonebook phonebook = new Phonebook();
-    Scanner in = new Scanner(System.in);
-    insertRoutine(phonebook, in);
-    updateRoutine(phonebook, in);
+    insertRoutine(phonebook);
+    updateRoutine(phonebook);
   }
 
-  private static void insertRoutine(Phonebook phonebook, Scanner in) {
+  private static void insertRoutine(Phonebook phonebook) {
+    Scanner in = new Scanner(System.in);
+
     String populateCriteria = "yes";
     String exitCriteria = "done";
     System.out.println(
@@ -50,7 +51,9 @@ public class PhonebookMain {
     System.out.println("Phonebook populated. you have " + phonebook.phonebookSize() + " contacts in the phonebook");
   }
 
-  private static void updateRoutine(Phonebook phonebook, Scanner in) {
+  private static void updateRoutine(Phonebook phonebook) {
+    Scanner in = new Scanner(System.in);
+
     String exitCriteria = "done";
     String changeNameCriteria = "yes";
     while (true) {
